@@ -559,22 +559,23 @@ const Portfolio = () => {
       </GlowButton>
               </div>
               
-              {/* resume  */}
+              {/* resume  pre*/}
               <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 mt-8">
-  <div className="bg-gray-800 rounded-lg p-2 sm:p-4 md:p-6 h-[80vh] w-full shadow-xl">
-<iframe
-    src="/resume.pdf#zoom=80"
-    title="Resume Preview"
-    className="w-full h-full rounded-lg border border-gray-700"
+ <div className="w-full h-[700px] overflow-hidden rounded-lg bg-gray-800">
+  <embed
+    src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    type="application/pdf"
+    className="w-full h-full"
   />
-                </div>
+</div>
+
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ontact */}
+      {/*contact */}
       <section id="contact" className="py-20 relative">
         <div className="container mx-auto px-6">
           <h2 className={`text-4xl font-bold text-center mb-16 bg-gradient-to-r ${theme.primary} bg-clip-text text-transparent`}>
